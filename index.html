@@ -7,15 +7,32 @@
     <body>
         <script>
             function computerPlay() {
-                let n = Math.random(3);
+                let randomNumber =  Math.floor(Math.random() * Math.floor(3));
+                switch(randomNumber) {
+                    case 0:
+                        return 'rock';
+                    case 1:
+                        return 'paper';
+                    case 2:
+                        return 'scissors';
+                    default:
+                        return 'error';
+                }
             }
             function playRound(playerSelection, computerSelection) {
                 let player = playerSelection.toLowerCase();
-                let computer = computerSelection.toLowerCase();
-                if (playerSelection === computerSelection)
+                if (player === computerSelection)
                     return 'Tie!';
+                else if (player === 'scissors' && computerSelection === 'paper')
+                    return 'You Win! ' + player + ' beats ' + computerSelection;
+                else if (player === 'paper' && computerSelection === 'scissors')
+                    return 'You Lose! ' + computerSelection + ' beats ' + player;
+                else if (player < computerSelection)
+                    return 'You Win! ' + player + ' beats ' + computerSelection;
+                else
+                    return 'You Lose! ' + computerSelection + ' beats ' + player;
             }
-            const playerSelection = 'rock';
+            const playerSelection = 'papeR';
             const computerSelection = computerPlay();
             console.log(playRound(playerSelection, computerSelection));
         </script>
