@@ -1,0 +1,59 @@
+body {
+    background-color: #333333;
+    color: black;
+    word-spacing: 10px;
+    text-shadow: 3px 3px #ff0000;
+}
+
+h1, h2 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    text-shadow: 3px 3px #ff0000;
+}
+
+h2 {
+    font-size: 50px;
+    text-shadow: 2px 2px #ff0000;
+}
+
+p {
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 4px 4px black;
+}
+
+#countResult {
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px #ff0000;
+}
+
+#btn {
+    text-align: center;
+}
+
+button {
+    font-family: 'Fredoka One', cursive;
+    outline: none;
+    background-color: black;
+    font-size: 50px;
+    margin: 150px 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color: #00cc00;
+    box-shadow: 4px 4px #ff0000;
+}
+
+button:hover {
+    background-color:  #00cc00;
+    color: black;
+}
