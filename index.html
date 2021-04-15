@@ -4,19 +4,21 @@
         <title>Courgette's Rock Paper Scissors</title>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Russo+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Rock Paper Scissors Game</h1>
-        <h2>Try to beat invisible computer</h2>
-        <div id="btn">
-            <button id="rockBtn" value="rock">Rock</button>
-            <button id="paperBtn" value="paper">Paper</button>
-            <button id="scissorsBtn" value="scissors">Scissors</button>
+        <p class="title">Rock Paper Scissors Game</p>
+        <p class="rule">Try to beat the invisible computer</p>
+        <div class="btn-container">
+            <button class="btn rock" value="rock">Rock</button>
+            <button class="btn paper" value="paper">Paper</button>
+            <button class="btn scissors" value="scissors">Scissors</button>
         </div>
-        <div id="showWinner">
-            <p id="showResult">Yo, hooman!</p>
-            <p id="countResult"></p>
+        <div>
+            <p class="result">Yo, hooman!</p>
+            <p class="score human-score">Hooman score: 0</p>
+            <p class="score computer-score">Computer score: 0</p>
         </div>
         <script src="scripts.js"></script>
     </body>
